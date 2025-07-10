@@ -1,0 +1,2 @@
+type_test,attention_dropout,hidden_dropout,weight_decay,pooling_type
+model_test,0.1,0.1,0.01,attention

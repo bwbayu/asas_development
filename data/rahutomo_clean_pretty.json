@@ -1,0 +1,202 @@
+[
+    {
+        "question":"Jelaskan kegunaan karbohidrat untuk tubuh kita.",
+        "reference_answer":"fungsi karbohidrat adalah sebagai pemasok energi dapat memperlancar proses pada pencernaan memberikan efek kenyang dengan kandungan selulosa nya dan penyeimbang asam dan basa dalam tubuh",
+        "dataset_id":1
+    },
+    {
+        "question":"Deskripsikan 4 manfaat telur untuk kesehatan?",
+        "reference_answer":"1 bermanfaat untuk pasien kemoterapi karena kandungan protein yang tinggi putih telur sangat disarankan untuk kemoterapi dan pasien ginjal 2 masker wajah putih telur juga banyak digunakan untuk masker wajah dimana diyakini dapat mengenyalkan serta mencerahkan kulit 3 kekebalan tubuh dan kesehatan mata secara keseluruhan telur baik untuk menjaga sistem kekebalan tubuh dan telah digunakan untuk mengobati katarak degenerasi makula dan membantu untuk membangun tulang yang kuat 4 membantu diet karena putih telur tinggi protein maka ia bisa menggantikan kebutuhan karbohidrat bagi yang sedang diet menurunkan berat badan manfaat protein termasuk juga bisa menggantikan fungsi karbohidrat untuk energi",
+        "dataset_id":2
+    },
+    {
+        "question":"Sebutkan lebih dari 10 cara merawat kesehatan rambut?",
+        "reference_answer":"1 selalu lindungi rambutmu dari sinar matahari angin dan hujan 2 setelah keramas jangan langsung menyisir tunggu beberapa saat sampai rambut agak kering 3 gunakan kondisioner setelah keramas kondisioner dapat membantu agar rambutmu semakin lurus 4 lakukan conditioning dengan benar 5 pilih sampo dan kondisioner dari jenis yang sama karena memiliki formulasi yang sama 6 hindari penggunaan hair dryer pada rambut 7 hindari menggunakan ikat rambut yang super ketat 8 ketika tidur di malam hari biarkan rambut tergerai pada satu sisi untuk menghindari kekusutan rambut 9 tidur menggunakan bantal yang terbuat dari satin 10 ketika mengeringkan rambut lakukan dengan cara ditekan 11 gunakan masker rambut yang cocok untuk rambut 12 gunakan air dingin untuk keramas 13 makan yang benar nutrisi tertentu seperti vitamin zat besi dan protein sangat penting untuk pertumbuhan rambut dan kesehatan",
+        "dataset_id":3
+    },
+    {
+        "question":"Sebutkan 8 cara menyegarkan pikiran saat kuliah atau di kantor?",
+        "reference_answer":"1 melakukan latihan atau aktivitas fisik bisa merangsang tenaga dan menyegarkan pikiran 2 tertawa merupakan obat yang paling baik untuk melawan kebosanan karena meningkatkan suasana hati mood 3 melakukan latihan mental seperti melakukan mainan puzzle atau teka teki silang 4 melakukan sosialisasi interaksi manusia bisa menjaga pikiran agar tetap segar 5 tidur siang sejenak hal ini tidak hanya menyegarkan pikiran tapi bisa menjadi fondasi yang kuat dalam hal produktivitas 6 mencium sesuatu yang menyenangkan aroma seperti dari lilin aromaterapi atau bau secangkir kopi panas 7 melakukan pemijatan pijat adalah cara sempurna untuk meredakan ketegangan dan mengurangi stres 8 melamun untuk jangka waktu singkat melamun bisa memberikan imajinasi dan menyegarkan pikiran",
+        "dataset_id":4
+    },
+    {
+        "question":"Sebutkan 6 cara belanja (shopping) yang baik dan efektif?",
+        "reference_answer":"1 buatlah list barang apa saja yang harus dibeli 2 utamakan kebutuhan daripada keinginan 3 bandingkan dulu komposisi kualitas dan kuantitas barang sebelum dibeli 4 jangan mudah tergiur barang barang diskon 5 teliti barang sebelum membeli 6 pilihlah mana barang yang yang bisa dibeli secara grosir atau eceran",
+        "dataset_id":5
+    },
+    {
+        "question":"Jelaskan yang dimaksud dengan gaya hidup hedonism.",
+        "reference_answer":"gaya hidup hedonis hedonism adalah suatu pola hidup yang aktivitasnya untuk mencari kesenangan hidup seperti lebih banyak menghabiskan waktu diluar rumah lebih banyak bermain senang pada keramaian kota senang membeli barang mahal yang disenanginya serta selalu ingin menjadi pusat perhatian",
+        "dataset_id":6
+    },
+    {
+        "question":"Apa yang anda ketahui mengenai cagar sejarah Candi Borobudur?",
+        "reference_answer":"borobudur adalah sebuah candi buddha yang terletak di borobudur magelang jawa tengah indonesia lokasi candi adalah kurang lebih 100 km di sebelah barat daya semarang 86 km di sebelah barat surakarta dan 40 km di sebelah barat laut yogyakarta candi borobudur diyakini merupakan peninggalan kerajaan dinasti sailendra masa pemerintahan raja samaratungga dari kerajaan mataram kuno",
+        "dataset_id":7
+    },
+    {
+        "question":"Sebutkan 7 sikap orang tua agar anak tidak salah memilih pergaulan?",
+        "reference_answer":"1 membekali anak dengan bimbingan agama sedini mungkin agar anak mempunyai kontrol perilaku yang kuat dalam pergaulan 2 memberikan kasih sayang dan perhatian yang cukup baik dari keluarga maupun lingkungan sekitarnya 3 disaat anak mau keluar rumah biasakan untuk meminta ijin dan tanya kemana perginya 4 kenali bakat dan minat anak sehingga orangtua bisa menyalurkannya dalam hal hal positif agar bakat tersalurkan dan anak tetap dalam pergaulan yang positif 5 jangan terlalu memberikan aturan yang ketat kepada anak dengan anak merasa terkekang dia akan mencari kebebasan di luar 6 jadilah sosok sahabat buat anak dan janganlah menjadi sosok yang ditakuti dengan begitu anak bisa mencurahkan apa yang sebelumnya dilakukan 7 bila penyimpangannya masih kecil mulai lah menegur dengan halus agar remaja pun merasa dihargai",
+        "dataset_id":8
+    },
+    {
+        "question":"Apa yang dimaksud dengan makanan 4 sehat 5 sempurna?",
+        "reference_answer":"makanan 4 sehat 5 sempurna adalah konsep makanan sehat yang dikampanyekan pemerintah sejak tahun 1955 dalam konsep 4 sehat 5 sempurna makanan sehat adalah makanan yang mengandung 4 sumber nutrisi yaitu makanan pokok lauk pauk sayur sayuran buah buahan dan disempurnakan dengan susu jika dilihat dari kandungannya makanan 4 sehat 5 sempurna adalah makanan yang mengandung karbohidrat protein mineral vitamin dan lemak tak jenuh",
+        "dataset_id":9
+    },
+    {
+        "question":"Bagaimana hubungan berfikir positif terhadap pola hidup sehat?",
+        "reference_answer":"otak merupakan bagian terpenting dari tubuh manusia segala aktivitas akan dikoordinasikan dengan otak sebelum dijalankan oleh bagian tubuh pikiran positif akan menghindarkan anda dari stres meningkatkan rasa percaya diri serta menjaga kinerja organ tubuh lainnya tetap maksimal",
+        "dataset_id":10
+    },
+    {
+        "question":"Sebutkan 5 manfaat olahraga bagi tubuh. (Termasuk bagi pikiran, otot dan organ tubuh) ",
+        "reference_answer":"mengurangi stress membentuk otot tubuh dan mengencangkan otot membakar lemak menghindarkan dari penyakit membuat organ tubuh lebih sehat meningkatkan stamina menghindari penuaan dini",
+        "dataset_id":11
+    },
+    {
+        "question":"Apa yang anda ketahui mengenai PSSI? (Termasuk pengertian, organisasi yang tergabung dan ketua umum saat ini) ",
+        "reference_answer":"pssi adalah persatuan sepak bola seluruh indonesia organisasi induk yang bertugas mengatur kegiatan olahraga sepak bola di indonesia pssi bergabung dengan fifa dan dengan afc pssi menggelar kompetisi liga indonesia setiap tahunnya dan piala indonesia ketua umum pssi sekarang adalah la nyalla mattalitti",
+        "dataset_id":12
+    },
+    {
+        "question":"Apa yang anda kethaui mengenai Rio Haryanto? (Termasuk tempat lahir, tim saat ini dan awal karir) ",
+        "reference_answer":"rio haryanto lahir di solo jawa tengah rio merupakan seorang pebalap berkebangsaan indonesia yang kini membalap di ajang formula one f1 rio bergabung dengan tim manor racing rio adalah pembalap indonesia pertama yang masuk formula one f1 rio mengawali karir di balap gokart pada tahun 2002 dengan juara nasional gokart kelas kadet",
+        "dataset_id":13
+    },
+    {
+        "question":"Apakah yang dimaksud dengan block dalam permainan bola voli dan posisi apa yang biasanya melakukan hal tersebut? ",
+        "reference_answer":"block adalah upaya menggagalkan serangan smash dari pihak lawan dengan cara membendung bola di atas jaring sambil meloncat biasanya menggunakan kedua tangan block dilakukan pada posisi sebagai libero",
+        "dataset_id":14
+    },
+    {
+        "question":"Sebutkan beberapa kondisi untuk dilakukannya kick off dalam sepak bola. (Sebutkan minimal 3) ",
+        "reference_answer":"memulai pertandingan terjadinya gol memulai babak kedua memulai babak perpanjangan waktu",
+        "dataset_id":15
+    },
+    {
+        "question":"Apa yang anda ketahui mengenai Cristiano Ronaldo? (lahir, kebangsaan, klub saat ini, klub sebelum, nomor punggung dan sebutannya) ",
+        "reference_answer":"cristiano ronaldo lahir di portugal 5 februari 1985 cristiano ronaldo dapat berposisi sebagai sayap kiri atau kanan serta penyerang tengah saat ini ia bermain untuk tim spanyol real madrid dan untuk tim nasional portugal sebelunya ia pernah bermain di sporting lisboa dan manchester united cristiano ronaldo kerap bernomor punggung 7 hingga mendapat sebutanan cr7",
+        "dataset_id":16
+    },
+    {
+        "question":"Sebutkan dan jelaskan secara singkat 4 jenis pemain yang ada dalam sepak bola. ",
+        "reference_answer":"goal keeper penjaga gawang merupakan pemain sepak bola untuk menangkap membendung bola sebelum masuk ke gawang defender bertugas untuk melindungi kiper saat lawan menguasai bola mencegah serangan lawan dan memblok tembakan pemain lawan gelandang adalah pemain yang membawa bola hingga ke depan saat melakukan serangan dan mencegah serangan lawan sampai ke daerah pertahanan peyerang forwards adalah pemain yang bertugas mencetak gol dan membobol pertahanan lawan dibutuhkan kelincahan kecepatan akurasi tembakan yang baik",
+        "dataset_id":17
+    },
+    {
+        "question":"Apa saja yang harus diperhatikan saat memilih kolam renang yang baik? (Sebutkan minimal 3) ",
+        "reference_answer":"kualitas air pilih air yang bersih dan tidak berbau peralatan keselamatan yang ada bentuk dan kedalaman kolam renang memperhatikan pengguna kolam renang pilih yang tidak berbaur antara pria dan wanita",
+        "dataset_id":18
+    },
+    {
+        "question":"Sebutkan 5 partai yang biasa dilombakan dalam bulu tangkis. ",
+        "reference_answer":"tunggal putra tunggal putri ganda putra ganda putri ganda campuran",
+        "dataset_id":19
+    },
+    {
+        "question":"Apa yang dimaksud dengan parkour? (pengertian, dan tempat-tempat biasa melakukan parkour) ",
+        "reference_answer":"parkour adalah aktivitas atau olahraga yang dilakukan oleh sesorang atau kelompok tertentu untuk berpindah dari satu tempat ke tempat lainnya dengan efisien dan cepat menggunakan kemampuan yang ada pada manusia berlari lompat menggantung parkour biasanya dilakukan di atas gedung bangunan penuh halangan bertembok pohon dan daerah berbatu",
+        "dataset_id":20
+    },
+    {
+        "question":"Jelaskan fungsi partai politik, berkaitan dengan kekuasaan pemerintahan. (Usahakan jawab dalam 2-4 kalimat) ",
+        "reference_answer":"partai politik sebagai organisasi resmi untuk menyalurkan aspirasi masyarakat partai politik memiliki kekuatan politik serta ikut menentukan proses pembentukan kekuasaan pemerintah secara legal diakui hukum juga mempunyai hak beraktifitas merebut dan mempertahankan kekuasaan politik",
+        "dataset_id":21
+    },
+    {
+        "question":"Tuliskan isi teks asli proklamasi dengan ejaan yang telah disempurnakan. ",
+        "reference_answer":"proklamasi kami bangsa indonesia dengan ini menyatakan kemerdekaan indonesia hal hal yang mengenai pemindahan kekuasaan d l l diselenggarakan dengan cara seksama dan dalam tempo yang sesingkat singkatnya jakarta 17 8 05 wakil wakil bangsa indonesia",
+        "dataset_id":22
+    },
+    {
+        "question":"Apa yang anda ketahui mengenai kerajaan Majapahit? (Mengenai tempat, masa puncak kejayaan dan agama. Usahakan jawab dalam 2-4 kalimat) ",
+        "reference_answer":"majapahit adalah sebuah kerajaan yang berpusat di jawa timur indonesia kerajaan ini mencapai puncak kejayaannya dan menguasai wilayah di nusantara pada masa kekuasaan hayam wuruk kerajaan majapahit merupakan kerajaan hindu budha terbesar dalam sejarah indonesia",
+        "dataset_id":23
+    },
+    {
+        "question":"Sebutkan 5 butir sila Pancasila. ",
+        "reference_answer":"ketuhanan yang maha esa kemanusiaan yang adil dan beradab persatuan indonesia kerakyatan yang dipimpin oleh hikmat kebijaksanaan dalam permusyawaratan perwakilan keadilan sosial bagi seluruh rakyat indonesia",
+        "dataset_id":24
+    },
+    {
+        "question":"Apa yang anda ketahui mengenai Negara Demokrasi? (Mengenai pengertian, peran rakyat dan mencakup bidang apa saja. Usahakan jawab dalam 2-4 kalimat) ",
+        "reference_answer":"negara demokrasi adalah suatu negara yang pemerintahannya dipegang oleh rakyat dan rakyat memiliki kedaulatan tertinggi demokrasi mengizinkan warga negara berpartisipasi baik secara langsung atau melalui perwakilan dalam perumusan pengembangan dan pembuatan hukum demokrasi mencakup kondisi sosial ekonomi dan budaya yang memungkinkan adanya praktik kebebasan politik secara bebas dan setara",
+        "dataset_id":25
+    },
+    {
+        "question":"Jelaskan pengertian masyarakat madani. ",
+        "reference_answer":"masyarakat madani adalah masyarakat yang beradab menjunjung tinggi nilai nilai kemanusiaan yang maju dalam penguasaan ilmu pengetahuan dan teknologi",
+        "dataset_id":26
+    },
+    {
+        "question":"Apa perbedaan hukum perdata dan hukum pidana? ",
+        "reference_answer":"hukum perdata adalah hukum yang mengatur hubungan antara individu dengan individu fokus dari hukum perdata adalah kepentingan personal atau kepentingan individu seperti hak waris harta gono gini hukum pidana adalah hukum tertulis yang mengatur tentang perbuatan yang dilarang pelanggaran kriminal",
+        "dataset_id":27
+    },
+    {
+        "question":"Apa yang anda ketahui mengenai MEA? (Usahakan jawab dalam 2-4 kalimat) ",
+        "reference_answer":"mea masyarakat ekonomi asean adalah sistem ekonomi negara negara asean yang bertujuan untuk menghilangkan hambatan di dalam melakukan kegiatan ekonomi lintas kawasan misalnya dalam perdagangan barang jasa dan investasi perdagangan bebas antarnegara negara asean mea dirancang untuk mewujudkan wawasan asean 2020",
+        "dataset_id":28
+    },
+    {
+        "question":"Apa yang dimaksud dengan pengakuan de facto suatu negara? (Sebutkan juga unsur negara yang harus ada agar diakui). ",
+        "reference_answer":"pengertian pengakuan de facto adalah pengakuan yang diberikan oleh suatu negara kepada negara lain yang telah memenuhi unsur unsur negara seperti ada pemimpin rakyat dan wilayahnya",
+        "dataset_id":29
+    },
+    {
+        "question":"Sebutkan 10 anggota ASEAN yang anda ketahui. ",
+        "reference_answer":"indonesia thailand malaysia singapura filipina brunei darussalam vietnam laos myanmar dan kamboja",
+        "dataset_id":30
+    },
+    {
+        "question":"Apa yang dimaksud dengan komputer? (Jawab dalam 1-3 kalimat) ",
+        "reference_answer":"komputer adalah rangkaian mesin elektronik yang dapat bekerja sama sistem ini digunakan untuk memudahkan pekerjaan manusia komputer bekerja otomatis berdasarkan urutan instruksi atau program yang diberikan",
+        "dataset_id":31
+    },
+    {
+        "question":"Sebutkan keuntungan-keuntungan yang bisa diperoleh dari penerapan teknologi dalam kegiatan bisnis? (Sebutkan minimal 3) ",
+        "reference_answer":"memperluas pemasaran sehingga tidak mempermasalahkan jarak dan waktu mengurangi biaya produksi promosi mempermudah penyimpanan data penjualan data barang maupun laporan keuangan menggantikan pekerjaan manual menjadi otomatis proses produksi lebih cepat dan praktis",
+        "dataset_id":32
+    },
+    {
+        "question":"Jelaskan yang dimaksud dengan hardware dan berikan contohnya (minimal 5). ",
+        "reference_answer":"hardware perangkat keras adalah suatu komponen yang ada pada komputer bisa dilihat secara kasat mata dan dapat disentuh secara fisik contoh mouse monitor keyboard printer kamera cpu kabel router bridge hub",
+        "dataset_id":33
+    },
+    {
+        "question":"Apa perbedaan dari data, informasi dan pengetahuan? ",
+        "reference_answer":"data merupakan rangkaian fakta yang mewakili suatu kejadian atau dapat di sebut dengan simbol yang terekam informasi adalah makna yang dapat di tafsirkan dari data pengetahuan adalah informasi yang telah dimaknai sehingga dapat digunakan untuk meningkatkan pengertian atau pemahaman",
+        "dataset_id":34
+    },
+    {
+        "question":"Bagaimana cara mengatasi sampah elektronik (e-waste)? (Sebutkan minimal 3) ",
+        "reference_answer":"mendaur ulang sampah elektronik menjadi barang yang berguna dan memiliki nilai jual memisahkan barang elektronik sesuai komposisi bahannya tidak membuang sembarangan sehingga karena dapat mencemari lingkungan dikembalikan kepada produsen elektronik",
+        "dataset_id":35
+    },
+    {
+        "question":"Apa yang dimaksud dengan volatile memory? ",
+        "reference_answer":"volatile memory adalah memory yang datanya dapat ditulis dan dihapus tetapi hilang saat kehilangan power kondisi off atau mati lampu",
+        "dataset_id":36
+    },
+    {
+        "question":"Apa kepanjangan dari LCD, CPU dan GPS? ",
+        "reference_answer":"lcd liquid crystal display cpu central processing unit gps global positioning system",
+        "dataset_id":37
+    },
+    {
+        "question":"Sebutkan nama versi android dari Cupcake hingga saat ini. ",
+        "reference_answer":"cupcake donut eclair froyo gingerbread honeycomb ice cream sandwich jelly bean kitkat dan lolypop",
+        "dataset_id":38
+    },
+    {
+        "question":"Apa yang dimaksud topologi jaringan LAN dan sebutkan contoh topologi tersebut (minimal 3). ",
+        "reference_answer":"topologi jaringan adalah struktur jaringan fisik yang digunakan untuk implementasi lan local area network unsur dasar penyusun jaringan yaitu node link dan station contoh topologi bintang star topologi cincin ring topologi bus topologi pohon tree topologi linier",
+        "dataset_id":39
+    },
+    {
+        "question":"Apa yang dimaksud dengan Bluetooth? ",
+        "reference_answer":"bluetooth adalah perangkat yang menjadi media tukar menukar menerima mengirim informasi di antara peralatan eketronik bluetooth merupakan media tanpa kabel biasanya bluethooth digunakan untuk mengirim foto atau file antar handphone",
+        "dataset_id":40
+    }
+]
