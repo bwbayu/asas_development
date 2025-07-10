@@ -338,7 +338,7 @@ class BERTPipeline:
                     student_emb = self.model(batchs['student_answer']['input_ids'], batchs['student_answer']['attention_mask'])
                     scores = batchs['labels'].float().view(-1)
 
-                    # Normalize embeddings
+                    # Normalize embeddings (normalize vector length == 1)
                     ref_embedding = F.normalize(reference_emb, p=2, dim=1)
                     student_embedding = F.normalize(student_emb, p=2, dim=1)
 
