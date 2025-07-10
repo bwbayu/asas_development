@@ -1,2 +1,0 @@
-2025-06-06 08:58:03,544 - INFO - Use pytorch device_name: cuda
-2025-06-06 08:58:03,544 - INFO - Load pretrained SentenceTransformer: sentence-transformers/distiluse-base-multilingual-cased-v2
