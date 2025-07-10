@@ -18,12 +18,18 @@ class AutomaticScoringDataset(Dataset):
         return text
 
     def __getitem__(self, index):
+        # apply praproses
         student_answer = self.preprocess_text(str(self.dataframe.iloc[index]['answer']))
+        # cek kolom skor yg sudah di normalisasi
         if 'normalized_score' in self.dataframe.columns:
             score = self.dataframe.iloc[index]['normalized_score']
         else:
             score = self.dataframe.iloc[index]['score'] / 100.0
+
+        # apply praproses
         reference_answer = self.preprocess_text(str(self.dataframe.iloc[index]['reference_answer']))
+        
+        # proses tokenizer
         encoding = self.tokenizer.encode_plus(
             reference_answer,
             student_answer,
@@ -48,32 +54,46 @@ from modeling_albert_default import AlbertModel
 class RegressionModel(nn.Module):
     def __init__(self, model_name='bert-base-uncased', classifier_dropout=0.1, hidden_dropout=0.0, attention_dropout=0.0, pooling_type='cls'):
         super().__init__()
-        # Load model config and modify dropout values
+        # load model config and modify dropout values
         self.pooling_type = pooling_type
         self.config = AlbertConfig.from_pretrained(model_name)
         self.config.hidden_dropout_prob = hidden_dropout
         self.config.attention_probs_dropout_prob = attention_dropout
         
-        # Load pretrained model
+        # load pretrained model
         self.model = AlbertModel.from_pretrained(model_name, config=self.config)
         
         set_seed(SEED)
-        # Add regression layer
+        # add regression layer
         self.dropout = nn.Dropout(p=classifier_dropout)
         self.regression_layer = nn.Linear(self.config.hidden_size, 1)
 
         if pooling_type == "attention":
+            # menginit query vector (learnable)
             self.query_vector = nn.Linear(self.config.hidden_size, 1)
 
     def mean_pooling(self, token_embeddings, attention_mask):
+        # menyesuaikan dimensi attention_mask dengan hidden state (unsqueeze)
+        # kemudian mengisi dimensi dengan nilai attenion_mask sebanyak dimensi hidden state (expand)
         input_mask_expanded = attention_mask.unsqueeze(-1).expand(token_embeddings.size()).float()
+        
+        # assign nilai 0 ke hidden state (*)
+        # menjumlahkan semua representasi setiap token (sum)
         sum_embeddings = torch.sum(token_embeddings * input_mask_expanded, 1)
+
+        # menghitung nilai attention_mask di setiap token
+        # jika ada nilai yang kurang dari 1e-9 maka nilai tersebut diganti dengan 1e-9 (menghindari dibagi dengan 0)
         sum_mask = input_mask_expanded.sum(1).clamp(min=1e-9)
-        return sum_embeddings / sum_mask  # Mean pooling
+        
+        # menghitung mean dari sum representasi dengan jumlah token
+        return sum_embeddings / sum_mask
     
     def max_pooling(self, token_embeddings, attention_mask):
         input_mask_expanded = attention_mask.unsqueeze(-1).expand(token_embeddings.size()).float()
+        # mengganti value representasi token padding dengan -1e9 agar diabaikan ketika mencari max
         token_embeddings[input_mask_expanded == 0] = -1e9
+        # cari max dari setiap token, kemudian ambil tensornya saja
+        # output dari torch.max ini berisi tensor dan index
         return torch.max(token_embeddings, 1)[0]
 
     def forward(self, input_ids, attention_mask=None, token_type_ids=None):
@@ -88,10 +108,14 @@ class RegressionModel(nn.Module):
         elif(self.pooling_type == 'max'):
             cls_embedding = self.max_pooling(hidden_states, attention_mask)
         elif self.pooling_type == "attention":
+            # menghitung attention score
             attn_scores = self.query_vector(hidden_states).squeeze(-1)
+            # masking padding dengan -1e9 -> diabaikan
             if attention_mask is not None:
                 attn_scores = attn_scores.masked_fill(attention_mask == 0, -1e9)
+            # mengubah att_score menjadi probabilitas dgn softmax
             attn_weights = torch.softmax(attn_scores, dim=1).unsqueeze(-1)
+            # mengalikan representasi vektor dengan prob kontribusinya
             cls_embedding = torch.sum(hidden_states * attn_weights, dim=1)
         else:
             cls_embedding = hidden_states[:, 0, :]
