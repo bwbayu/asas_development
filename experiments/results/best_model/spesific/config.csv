@@ -1,0 +1,3 @@
+config_id,model_type,model_name,pooling_type,epochs,dropout
+0,sbert,sentence-transformers/distiluse-base-multilingual-cased-v2,mean,13,0.1
+1,bert,indobenchmark/indobert-lite-base-p2,cls,24,0.3

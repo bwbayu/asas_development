@@ -1,0 +1,6 @@
+config_id,type_test,model_name,dataset_type,batch_size,epochs,learning_rate,attention_dropout,hidden_dropout,classifier_dropout,weight_decay,training_time,peak_memory,test_mse,test_mae,test_rmse,test_pearson
+0,classifier,indobenchmark/indobert-lite-base-p2,before balancing,16,15,2e-05,0,0,0.1,0.01,2266.458400249481,4907.41943359375,0.01152495608235208,0.0830319,0.10735434,0.9169099986207092
+1,classifier,indobenchmark/indobert-lite-base-p2,after balancing,16,17,2e-05,0,0,0.1,0.01,6292.8619556427,4907.41943359375,0.009712577439271487,0.076863505,0.09855241,0.9256925702575476
+2,classifier,indobenchmark/indobert-lite-base-p2,before balancing,16,15,2e-05,0,0,0.1,0.01,3054.0042016506195,4907.41943359375,0.011154263280332088,0.0816092,0.10561375,0.9167102877073068
+3,classifier,indobenchmark/indobert-lite-base-p2,after balancing,16,10,2e-05,0,0,0.1,0.01,3748.259583711624,4907.41943359375,0.010454860265151812,0.07866295,0.10224902,0.925008038444977
+4,classifier,indobenchmark/indobert-lite-base-p2,after balancing,16,17,2e-05,0,0,0.1,0.01,3515.4962542057037,4907.41943359375,0.01007334628285697,0.0788374,0.10036606,0.925766611737259

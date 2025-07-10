@@ -1,0 +1,2 @@
+config_id,type_test,model_name,pooling_type,batch_size,epochs,learning_rate,attention_dropout,hidden_dropout,weight_decay,training_time,peak_memory,reg_train_loss,reg_train_rmse,reg_train_pearson,reg_valid_loss,reg_valid_rmse,reg_valid_pearson,reg_test_loss,reg_test_rmse,reg_test_pearson
+0,model_test,sentence-transformers/distiluse-base-multilingual-cased-v2,attention,16,7,2e-05,0.1,0.1,0.01,1632.5569071769714,7028.75537109375,0.001282836,0.0358167,0.9923022493912768,0.011112919,0.10541783,0.9204301003647554,0.010437851,0.1021658,0.9221364978510986

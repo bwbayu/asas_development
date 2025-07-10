@@ -1,0 +1,6 @@
+2025-06-08 00:14:41,358 - INFO - Use pytorch device_name: cuda
+2025-06-08 00:14:41,358 - INFO - Load pretrained SentenceTransformer: sentence-transformers/distiluse-base-multilingual-cased-v2
+2025-06-08 00:15:30,465 - INFO - Use pytorch device_name: cuda
+2025-06-08 00:15:30,465 - INFO - Load pretrained SentenceTransformer: sentence-transformers/distiluse-base-multilingual-cased-v2
+2025-06-08 00:37:24,106 - INFO - Use pytorch device_name: cuda
+2025-06-08 00:37:24,106 - INFO - Load pretrained SentenceTransformer: sentence-transformers/distiluse-base-multilingual-cased-v2
