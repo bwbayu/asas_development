@@ -241,7 +241,6 @@ class BERTPipeline:
                         batchs['token_type_ids']).squeeze(1)
                     loss = self.criterion(predictions, batchs['labels'])
                     if torch.isnan(loss):
-                        print("⚠️ Warning: NaN detected in loss validation!")
                         print(f"Predictions: {predictions}")
                         print(f"Targets: {batchs['labels']}")
                         continue
@@ -296,7 +295,6 @@ class BERTPipeline:
                     # calculate loss function
                     loss = self.criterion(predictions, batchs['labels'])
                     if torch.isnan(loss):
-                        print("⚠️ Warning: NaN detected in loss validation!")
                         print(f"Predictions: {predictions}")
                         print(f"Targets: {batchs['labels']}")
                         continue

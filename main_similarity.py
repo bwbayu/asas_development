@@ -282,7 +282,6 @@ class BERTPipeline:
                     # calculate loss
                     loss = self.criterion(similarity, scores)
                     if torch.isnan(loss):
-                        print("⚠️ Warning: NaN detected in loss validation!")
                         print(f"Predictions: {similarity}")
                         print(f"Targets: {batchs['labels']}")
                         continue
@@ -349,7 +348,6 @@ class BERTPipeline:
                     # calculate loss
                     loss = self.criterion(similarity, scores)
                     if torch.isnan(loss):
-                        print("⚠️ Warning: NaN detected in loss validation!")
                         print(f"Predictions: {similarity}")
                         print(f"Targets: {scores}")
                         continue
