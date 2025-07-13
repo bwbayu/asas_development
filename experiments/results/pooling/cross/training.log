@@ -6,3 +6,11 @@
 2025-06-08 01:11:41,270 - INFO - Load pretrained SentenceTransformer: sentence-transformers/distiluse-base-multilingual-cased-v2
 2025-06-08 01:11:50,652 - INFO - Use pytorch device_name: cuda
 2025-06-08 01:11:50,652 - INFO - Load pretrained SentenceTransformer: sentence-transformers/distiluse-base-multilingual-cased-v2
+2025-07-12 22:57:30,670 - INFO - Use pytorch device_name: cuda
+2025-07-12 22:57:30,672 - INFO - Load pretrained SentenceTransformer: sentence-transformers/distiluse-base-multilingual-cased-v2
+2025-07-12 22:58:30,443 - INFO - Use pytorch device_name: cuda
+2025-07-12 22:58:30,443 - INFO - Load pretrained SentenceTransformer: sentence-transformers/distiluse-base-multilingual-cased-v2
+2025-07-12 23:00:40,905 - INFO - Use pytorch device_name: cuda
+2025-07-12 23:00:40,905 - INFO - Load pretrained SentenceTransformer: sentence-transformers/distiluse-base-multilingual-cased-v2
+2025-07-12 23:02:50,814 - INFO - Use pytorch device_name: cuda
+2025-07-12 23:02:50,814 - INFO - Load pretrained SentenceTransformer: sentence-transformers/distiluse-base-multilingual-cased-v2

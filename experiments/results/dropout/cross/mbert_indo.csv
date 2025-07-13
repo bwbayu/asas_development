@@ -1,0 +1,4 @@
+config_id,type_test,model_name,pooling_type,batch_size,epochs,learning_rate,attention_dropout,hidden_dropout,classifier_dropout,weight_decay,training_time,peak_memory,test_mse,test_mae,test_rmse,test_pearson
+0,before balancing,google-bert/bert-base-multilingual-cased,cls,16,13,2e-05,0,0,0.1,0.01,1311.117283821106,6995.60009765625,0.01322713759369575,0.09186706,0.11500929,0.9155320116414896
+1,before balancing,google-bert/bert-base-multilingual-cased,cls,16,11,2e-05,0,0,0.3,0.01,1139.6606810092926,6996.72509765625,0.015111227412349902,0.09910999,0.12292774,0.9198101393469774
+2,before balancing,google-bert/bert-base-multilingual-cased,cls,16,7,2e-05,0,0,0.5,0.01,743.396977186203,6996.72509765625,0.009723431359116848,0.07931508,0.09860746,0.9248844357310348

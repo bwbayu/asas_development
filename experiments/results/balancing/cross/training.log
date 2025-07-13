@@ -1,2 +1,4 @@
 2025-06-08 01:07:17,097 - INFO - Use pytorch device_name: cuda
 2025-06-08 01:07:17,098 - INFO - Load pretrained SentenceTransformer: sentence-transformers/distiluse-base-multilingual-cased-v2
+2025-07-12 22:48:16,694 - INFO - Use pytorch device_name: cuda
+2025-07-12 22:48:16,694 - INFO - Load pretrained SentenceTransformer: sentence-transformers/distiluse-base-multilingual-cased-v2

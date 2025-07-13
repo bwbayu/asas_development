@@ -4,3 +4,5 @@
 2025-06-08 00:15:30,465 - INFO - Load pretrained SentenceTransformer: sentence-transformers/distiluse-base-multilingual-cased-v2
 2025-06-08 00:37:24,106 - INFO - Use pytorch device_name: cuda
 2025-06-08 00:37:24,106 - INFO - Load pretrained SentenceTransformer: sentence-transformers/distiluse-base-multilingual-cased-v2
+2025-07-12 22:46:18,616 - INFO - Use pytorch device_name: cuda
+2025-07-12 22:46:18,617 - INFO - Load pretrained SentenceTransformer: sentence-transformers/distiluse-base-multilingual-cased-v2

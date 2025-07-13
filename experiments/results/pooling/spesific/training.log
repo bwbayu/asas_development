@@ -28,3 +28,11 @@
 2025-06-08 00:46:22,809 - INFO - Load pretrained SentenceTransformer: sentence-transformers/distiluse-base-multilingual-cased-v2
 2025-06-08 00:46:32,232 - INFO - Use pytorch device_name: cuda
 2025-06-08 00:46:32,232 - INFO - Load pretrained SentenceTransformer: sentence-transformers/distiluse-base-multilingual-cased-v2
+2025-07-12 23:29:08,702 - INFO - Use pytorch device_name: cuda
+2025-07-12 23:29:08,702 - INFO - Load pretrained SentenceTransformer: sentence-transformers/distiluse-base-multilingual-cased-v2
+2025-07-12 23:29:19,203 - INFO - Use pytorch device_name: cuda
+2025-07-12 23:29:19,203 - INFO - Load pretrained SentenceTransformer: sentence-transformers/distiluse-base-multilingual-cased-v2
+2025-07-12 23:29:28,485 - INFO - Use pytorch device_name: cuda
+2025-07-12 23:29:28,485 - INFO - Load pretrained SentenceTransformer: sentence-transformers/distiluse-base-multilingual-cased-v2
+2025-07-12 23:29:37,900 - INFO - Use pytorch device_name: cuda
+2025-07-12 23:29:37,900 - INFO - Load pretrained SentenceTransformer: sentence-transformers/distiluse-base-multilingual-cased-v2
