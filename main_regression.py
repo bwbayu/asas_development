@@ -48,7 +48,7 @@ class AutomaticScoringDataset(Dataset):
 # ============================================================================= MODEL
 import torch
 import torch.nn as nn
-from transformers import AlbertConfig
+from transformers import AlbertConfig, AutoModel, AutoConfig
 from modeling_albert_default import AlbertModel
 
 class RegressionModel(nn.Module):
@@ -56,12 +56,16 @@ class RegressionModel(nn.Module):
         super().__init__()
         # load model config and modify dropout values
         self.pooling_type = pooling_type
-        self.config = AlbertConfig.from_pretrained(model_name)
-        self.config.hidden_dropout_prob = hidden_dropout
-        self.config.attention_probs_dropout_prob = attention_dropout
-        
-        # load pretrained model
-        self.model = AlbertModel.from_pretrained(model_name, config=self.config)
+        if(model_name == 'indobenchmark/indobert-lite-base-p2'):
+            self.config = AlbertConfig.from_pretrained(model_name)
+            self.config.hidden_dropout_prob = hidden_dropout
+            self.config.attention_probs_dropout_prob = attention_dropout
+            
+            # load pretrained model
+            self.model = AlbertModel.from_pretrained(model_name, config=self.config)
+        else:
+            self.config = AutoConfig.from_pretrained(model_name)
+            self.model = AutoModel.from_pretrained(model_name, config=self.config)
         
         set_seed(SEED)
         # add regression layer
@@ -270,9 +274,9 @@ class BERTPipeline:
         epochs = self.config["epochs"]
         num_epochs = 0
         best_valid_metric = self.config["best_valid_rmse"] if self.config["best_valid_rmse"] is not None else float('inf')
-        best_model_path = os.path.join("experiments", "models", "dropout", f"{self.config['split_type']}", f"bert_{self.config['type_test']}_{self.config['dataset_type']}.pt")
+        best_model_path = os.path.join("experiments", "models", "dropout", f"{self.config['split_type']}", f"mbert_{self.config['dataset_type']}.pt")
         valid_metric_config = float('inf')
-        model_path_config = os.path.join("experiments", "models", "dropout", f"{self.config['split_type']}", f"bert_{self.config['type_test']}_{self.config['dataset_type']}_{self.config['config_id']}.pt")
+        model_path_config = os.path.join("experiments", "models", "dropout", f"{self.config['split_type']}", f"mbert_{self.config['dataset_type']}_{self.config['config_id']}.pt")
         for epoch in range(epochs):
             num_epochs += 1
             print(f"====== Training Epoch {epoch + 1}/{epochs} ======")
@@ -364,8 +368,6 @@ class BERTPipeline:
             "config_id": self.config.get("config_id"),
             "type_test": self.config.get("type_test"),
             "model_name": self.config.get("model_name"),
-            # # !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! CHANGE THIS
-            # "dataset_type": "after balancing", 
             "pooling_type": self.config.get("pooling_type"),
             "batch_size": self.config.get("batch_size"),
             "epochs": num_epochs,
@@ -423,9 +425,8 @@ def main():
     split_type = ['cross']
     for split in split_type:
         dataset_list = [
-        (f"data/clean/{split}/train_indo_balanced.csv", f"data/clean/{split}/valid_indo.csv", f"data/clean/{split}/test_indo.csv", "indo", "indobenchmark/indobert-lite-base-p2")
+        (f"data/clean/{split}/train_indo.csv", f"data/clean/{split}/valid_indo.csv", f"data/clean/{split}/test_indo.csv", "indo", "google-bert/bert-base-multilingual-cased", "before balancing"),
         ]
-    # ("data/clean/cross/train_mohler.csv", "data/clean/cross/valid_mohler.csv", "data/clean/cross/test_mohler.csv", "mohler", "albert/albert-base-v1")
         # read experiment data
         df_exp = pd.read_csv("data/tabel_eksperimen_classifier.csv")
 
@@ -436,12 +437,11 @@ def main():
                 "classifier_dropout": row["classifier_dropout"],
                 "attention_dropout": row["attention_dropout"],
                 "hidden_dropout": row["hidden_dropout"],
-                "type_test": row["type_test"],
                 "weight_decay": row["weight_decay"],
                 "pooling_type": row["pooling_type"]
             })
         print("Total Experiment : ", len(experiments)) 
-        for train_data, valid_data, test_data, dataset_type, model_name in dataset_list:
+        for train_data, valid_data, test_data, dataset_type, model_name, type_test in dataset_list:
             train_df = pd.read_csv(train_data)
             print(train_df.info())
 
@@ -455,13 +455,13 @@ def main():
                 # Check if the first file exists
                 df_result = None
                 results = []
-                path = f"experiments/results/dropout/{split}/bert_{config['type_test']}_{dataset_type}.csv"
-                epoch_path = f"experiments/results/dropout/{split}/bert_{config['type_test']}_{dataset_type}_epoch.csv"
+                path = f"experiments/results/dropout/{split}/mbert_{dataset_type}.csv"
+                epoch_path = f"experiments/results/dropout/{split}/mbert_{dataset_type}_epoch.csv"
                 if os.path.exists(path):
                     df_result = pd.read_csv(path)
                     print(df_result['config_id'].iloc[-1])
                 else:
-                    print(f"File 'bert_{config['type_test']}_{dataset_type}.csv' does not exist.")
+                    print(f"File 'mbert_{dataset_type}.csv' does not exist.")
 
                 idx = (df_result['config_id'].iloc[-1] + 1) if df_result is not None and not df_result.empty else 0  # index untuk setiap kombinasi
                 results_epoch = []
@@ -471,7 +471,7 @@ def main():
                     df_result1 = pd.read_csv(epoch_path)
                     print(min(df_result1['valid_rmse']))
                 else:
-                    print(f"File 'bert_{config['type_test']}_{dataset_type}_epoch.csv' does not exist.")
+                    print(f"File 'mbert_{dataset_type}_epoch.csv' does not exist.")
 
                 # set up hyperparamter
                 run_config = {
@@ -489,17 +489,17 @@ def main():
                     "hidden_dropout": config["hidden_dropout"],
                     "classifier_dropout": config["classifier_dropout"],
                     "weight_decay": config["weight_decay"],
-                    "type_test": config["type_test"],
+                    "type_test": type_test,
                     "pooling_type": config["pooling_type"],
                     "split_type": split
                 }
 
                 logging.info(
-                    f"Running configuration: config_id={idx}, model_name={run_config['model_name']}, epochs={100}, type_test:{run_config['type_test']}"
+                    f"Running configuration: config_id={idx}, model_name={run_config['model_name']}, epochs={100}"
                 )
 
                 print(
-                    f"\nRunning configuration: config_id={idx}, model_name={run_config['model_name']}, epochs={100}, type_test:{run_config['type_test']}"
+                    f"\nRunning configuration: config_id={idx}, model_name={run_config['model_name']}, epochs={100}"
                 )
 
                 try:
