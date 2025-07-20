@@ -86,3 +86,13 @@
 2025-07-13 12:11:29,258 - INFO - Load pretrained SentenceTransformer: sentence-transformers/distiluse-base-multilingual-cased-v2
 2025-07-13 12:11:39,423 - INFO - Use pytorch device_name: cuda
 2025-07-13 12:11:39,424 - INFO - Load pretrained SentenceTransformer: sentence-transformers/distiluse-base-multilingual-cased-v2
+2025-07-13 12:14:25,375 - INFO - PyTorch version 2.4.1+cu121 available.
+2025-07-13 12:14:25,377 - INFO - Polars version 1.17.1 available.
+2025-07-13 12:14:26,451 - INFO - Use pytorch device_name: cuda
+2025-07-13 12:14:26,451 - INFO - Load pretrained SentenceTransformer: sentence-transformers/distiluse-base-multilingual-cased-v2
+2025-07-13 12:14:36,426 - INFO - Use pytorch device_name: cuda
+2025-07-13 12:14:36,427 - INFO - Load pretrained SentenceTransformer: sentence-transformers/distiluse-base-multilingual-cased-v2
+2025-07-13 12:16:40,251 - INFO - Use pytorch device_name: cuda
+2025-07-13 12:16:40,251 - INFO - Load pretrained SentenceTransformer: sentence-transformers/distiluse-base-multilingual-cased-v2
+2025-07-13 12:16:49,474 - INFO - Use pytorch device_name: cuda
+2025-07-13 12:16:49,474 - INFO - Load pretrained SentenceTransformer: sentence-transformers/distiluse-base-multilingual-cased-v2

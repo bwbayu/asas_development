@@ -1,4 +1,4 @@
-type_test,attention_dropout,hidden_dropout,classifier_dropout,weight_decay,pooling_type
-classifier,0,0,0.1,0.01,attention
-classifier,0,0,0.3,0.01,attention
-classifier,0,0,0.5,0.01,attention
+attention_dropout,hidden_dropout,classifier_dropout,weight_decay,pooling_type
+0,0,0.1,0.01,cls
+0,0,0.3,0.01,cls
+0,0,0.5,0.01,cls

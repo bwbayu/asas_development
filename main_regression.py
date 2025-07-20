@@ -274,9 +274,9 @@ class BERTPipeline:
         epochs = self.config["epochs"]
         num_epochs = 0
         best_valid_metric = self.config["best_valid_rmse"] if self.config["best_valid_rmse"] is not None else float('inf')
-        best_model_path = os.path.join("experiments", "models", "dropout", f"{self.config['split_type']}", f"mbert_{self.config['dataset_type']}.pt")
+        best_model_path = os.path.join("experiments", "models", "dropout", f"{self.config['split_type']}", f"bert_classifier_{self.config['dataset_type']}.pt")
         valid_metric_config = float('inf')
-        model_path_config = os.path.join("experiments", "models", "dropout", f"{self.config['split_type']}", f"mbert_{self.config['dataset_type']}_{self.config['config_id']}.pt")
+        model_path_config = os.path.join("experiments", "models", "dropout", f"{self.config['split_type']}", f"bert_classifier_{self.config['dataset_type']}_{self.config['config_id']}.pt")
         for epoch in range(epochs):
             num_epochs += 1
             print(f"====== Training Epoch {epoch + 1}/{epochs} ======")
@@ -425,7 +425,7 @@ def main():
     split_type = ['cross']
     for split in split_type:
         dataset_list = [
-        (f"data/clean/{split}/train_indo.csv", f"data/clean/{split}/valid_indo.csv", f"data/clean/{split}/test_indo.csv", "indo", "google-bert/bert-base-multilingual-cased", "before balancing"),
+        (f"data/clean/{split}/train_indo_balanced.csv", f"data/clean/{split}/valid_indo.csv", f"data/clean/{split}/test_indo.csv", "indo", "indobenchmark/indobert-lite-base-p2", "before balancing"),
         ]
         # read experiment data
         df_exp = pd.read_csv("data/tabel_eksperimen_classifier.csv")
@@ -455,13 +455,13 @@ def main():
                 # Check if the first file exists
                 df_result = None
                 results = []
-                path = f"experiments/results/dropout/{split}/mbert_{dataset_type}.csv"
-                epoch_path = f"experiments/results/dropout/{split}/mbert_{dataset_type}_epoch.csv"
+                path = f"experiments/results/dropout/{split}/bert_classifier_{dataset_type}.csv"
+                epoch_path = f"experiments/results/dropout/{split}/bert_classifier_{dataset_type}_epoch.csv"
                 if os.path.exists(path):
                     df_result = pd.read_csv(path)
                     print(df_result['config_id'].iloc[-1])
                 else:
-                    print(f"File 'mbert_{dataset_type}.csv' does not exist.")
+                    print(f"File 'bert_classifier_{dataset_type}.csv' does not exist.")
 
                 idx = (df_result['config_id'].iloc[-1] + 1) if df_result is not None and not df_result.empty else 0  # index untuk setiap kombinasi
                 results_epoch = []
@@ -471,7 +471,7 @@ def main():
                     df_result1 = pd.read_csv(epoch_path)
                     print(min(df_result1['valid_rmse']))
                 else:
-                    print(f"File 'mbert_{dataset_type}_epoch.csv' does not exist.")
+                    print(f"File 'bert_classifier_{dataset_type}_epoch.csv' does not exist.")
 
                 # set up hyperparamter
                 run_config = {
