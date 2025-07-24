@@ -4,6 +4,10 @@ This repository contains the code, data, and experimental results for training a
 
 **Available at:** [https://huggingface.co/bwbayu/experiment](https://huggingface.co/bwbayu/experiment)
 
+**Demo FE:** [https://github.com/bwbayu/asas_fe](https://github.com/bwbayu/asas_fe)
+
+**Demo BE:** [https://github.com/bwbayu/asas_be](https://github.com/bwbayu/asas_be)
+
 ## Project Overview
 
 The goal of this project is to experiment with different configurations for Automatic Short Answer Scoring (ASAS) tasks, comparing similarity-based and direct regression approaches. The dataset is split into two scenarios: **specific-prompt** and **cross-prompt**, and various experiments are conducted to evaluate the impact of data augmentation, pooling strategies, and dropout rates. The repository includes all necessary scripts for preprocessing, data augmentation, model training, and result analysis, along with the best-performing model.
