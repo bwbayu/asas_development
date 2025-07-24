@@ -14,6 +14,7 @@ This section outlines the two scoring approaches and two data-splitting scenario
 
 ### Approaches
 1. **Direct Scoring** (`main_regression.py`):
+
 ![direct scoring approach](<image/direct scoring-1.png>)
    - **Overview**: Predicts a continuous score [0, 1] for a given text using a regression-based approach. Input text is tokenized, encoded, and processed by a Transformer model (IndoBERT or mBERT), followed by a pooling layer and a dense regressor layer for end-to-end score prediction.
    - **Models Used**:
@@ -22,17 +23,20 @@ This section outlines the two scoring approaches and two data-splitting scenario
    - **Purpose**: Suitable for tasks requiring direct numerical scoring, such as evaluating text quality or relevance.
 
 2. **Similarity-Based Scoring** (`main_similarity.py`):
+
 ![similarity-based scoring approach](<image/similarity-based scoring-1.png>)
    - **Overview**: Measures semantic similarity between a student’s answer and a reference answer using Sentence-BERT (distiluse-base-multilingual-cased-v2, 135M parameters, 6 layers). Both texts are processed by a shared-weight encoder, and their embeddings are compared using cosine similarity. A linear regression model maps the similarity score to a final predicted score.
    - **Purpose**: Ideal for tasks involving text comparison, such as assessing answer similarity to a reference.
 
 ### Scenarios
 1. **Specific-Prompt** (`data/clean/specific/`):
+
 ![specific-prompt](image/specific-prompt.png)
    - **Overview**: The dataset is split by student answers for each prompt, with training, validation, and testing sets (80:10:10 ratio) drawn from the same prompts. For example, if a prompt has 10 answers, 8 are used for training, 1 for validation, and 1 for testing.
    - **Purpose**: Evaluates model performance on answers within the same prompt context, testing intra-prompt generalization.
 
 2. **Cross-Prompt** (`data/clean/cross/`):
+
 ![cross-prompt](image/cross-prompt.png)
    - **Overview**: The dataset is split by prompts, with training, validation, and testing sets (80:10:10 ratio) containing different prompts. For example, if there are 10 prompts, 8 are used for training, 1 for validation, and 1 for testing, each with all their answers.
    - **Purpose**: Tests model robustness on unseen prompts, assessing cross-prompt generalization.
